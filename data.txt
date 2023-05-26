@@ -1,0 +1,12 @@
+101 Deluxe 1
+102 Deluxe 1
+103 Deluxe 1
+104 Deluxe 1
+201 Luxury 1
+202 Luxury 1
+203 Luxury 1
+204 Grande 1
+301 Grande 1
+302 Grande 1
+303 Grande 1
+304 Grande 1
