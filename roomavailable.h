@@ -14,11 +14,17 @@ class Roomavailable : public QDialog
 public:
 	Roomavailable(QWidget *parent = nullptr);
 	~Roomavailable();
-	void readData();
+
+	bool isRoomAvailable(QString& roomNumber, QString& checkin, QString& checkout);
+	void on_pushButton1_clicked();
+
 
 private:
 	Ui::RoomavailableClass *ui;
+	
+
 
 private slots:
 	void on_pushButton0_clicked();
+
 };

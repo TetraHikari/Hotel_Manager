@@ -32,7 +32,7 @@
   </ImportGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="QtSettings">
     <QtInstall>6.5.1_msvc2019_64</QtInstall>
-    <QtModules>core;gui;widgets</QtModules>
+    <QtModules>core;gui;widgets;core5compat;sql;svg</QtModules>
     <QtBuildConfig>debug</QtBuildConfig>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'" Label="QtSettings">
@@ -89,9 +89,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="checkin.cpp" />
+    <ClCompile Include="checkout.cpp" />
+    <ClCompile Include="datarecord.cpp" />
     <ClCompile Include="reservation.cpp" />
     <ClCompile Include="roomavailable.cpp" />
     <QtRcc Include="mainwindow.qrc" />
+    <QtUic Include="checkin.ui" />
+    <QtUic Include="checkout.ui" />
+    <QtUic Include="datarecord.ui" />
     <QtUic Include="mainwindow.ui" />
     <QtMoc Include="mainwindow.h" />
     <ClCompile Include="mainwindow.cpp" />
@@ -103,13 +109,24 @@
     <QtMoc Include="reservation.h" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="guest_database.txt" />
+    <None Include="user_database.sql" />
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="roomavailable.h" />
   </ItemGroup>
   <ItemGroup>
-    <Text Include="roomdata.txt" />
+    <Text Include="room_database.sql" />
+    <Text Include="currentcheckin.txt" />
+    <Text Include="currentcheckout.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="datarecord.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="checkin.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="checkout.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">

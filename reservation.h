@@ -16,12 +16,17 @@ public:
     Reservation(QWidget* parent = nullptr);
     ~Reservation();
 
+    bool isRoomAvailable(QString& roomNumber, QString& checkin, QString& checkout);
+
+
 private:
     Ui::ReservationClass* ui;
 
-    bool isRoomTypeAvailable(const QString& roomType);
-
+    
 private slots:
     void on_pushButton1_clicked();
     void on_pushButton2_clicked();
+    void on_pushButton3_clicked();
+
+
 };

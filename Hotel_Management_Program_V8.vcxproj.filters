@@ -49,12 +49,30 @@
     <ClCompile Include="roomavailable.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="datarecord.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="checkin.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="checkout.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="reservation.h">
       <Filter>Header Files</Filter>
     </QtMoc>
     <QtMoc Include="roomavailable.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="datarecord.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="checkin.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="checkout.h">
       <Filter>Header Files</Filter>
     </QtMoc>
   </ItemGroup>
@@ -65,14 +83,29 @@
     <QtUic Include="roomavailable.ui">
       <Filter>Form Files</Filter>
     </QtUic>
+    <QtUic Include="datarecord.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="checkin.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="checkout.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
   </ItemGroup>
   <ItemGroup>
-    <None Include="guest_database.txt">
+    <None Include="user_database.sql">
       <Filter>Database</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="roomdata.txt">
+    <Text Include="room_database.sql">
+      <Filter>Database</Filter>
+    </Text>
+    <Text Include="currentcheckin.txt">
+      <Filter>Database</Filter>
+    </Text>
+    <Text Include="currentcheckout.txt">
       <Filter>Database</Filter>
     </Text>
   </ItemGroup>
